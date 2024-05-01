@@ -1,0 +1,249 @@
+.paymentForm{
+    width: 800px;
+    height: 500px;
+    padding: 20px ;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(245, 245, 245, 0.8); 
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+
+  }
+  .paymentState{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.137);
+    top: 20px;
+    border-radius: 16px;
+  }
+  .paymentState p{
+    font-size: 1.5rem;
+    opacity: 0.2;
+  }
+  
+  .completePaymentH1{
+    position: absolute;
+    top: 50px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .inputSection{
+    margin-left: 20px;
+    line-height: 16px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0));
+    
+  }
+  .detailSection{
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0));
+    padding: 10px 0 0 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    align-items: center;
+    line-height: 16px;
+    gap: 20px;
+  }
+  .detailSection p {
+    margin-bottom: 0;
+    color: rgba(27, 20, 20, 0.712);
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+  }
+  .detailSection span{
+    font-size: 1rem;
+    margin-left: 10px;
+  } 
+  .detailInfo{
+    padding: 20px;
+    width: 360px;
+    background-color: rgba(255, 255, 255, 0.616);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.842);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+  .cardDetailsButton{ 
+    display: block;
+    width: 350px;
+    padding: 10px;
+    background-color: #ffee00b2;
+    color: #131212be;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .completePaymentButton{
+    display: block;
+    width: 350px;
+    padding: 10px;
+    background-color: #ffee00b2;
+    color: #131212be;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 50px;
+  }
+  .cardDetailsButton:hover{
+    background-color: hsla(56, 100%, 40%, 0.8);
+    color: rgb(0, 0, 0);
+  }
+  .completePaymentButton:hover{
+    background-color: hsla(56, 100%, 40%, 0.8);
+    color: rgb(0, 0, 0);
+  }
+  select{
+    width: 320px;
+    padding: 10px;
+    color: white;
+    margin: 0;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    cursor: pointer;
+    /* border-bottom: 2px solid rgba(255, 255, 255, 0.2); */
+  }
+  select option{
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  input[type="text"],
+  textarea {
+    width: 320px;
+    padding: 10px;
+    color: white;
+    margin: 0;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+input::placeholder,textarea::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-family: 'Poppins';
+    font-weight: 300;
+    position: relative;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+
+}
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    outline: none !important;
+    color: rgb(226, 226, 226);
+}
+input[type="text"]:focus::placeholder,textarea:focus::placeholder{
+
+    top: -25px;  
+}
+
+.cardForm{
+  width: 800px;
+  height: 500px;
+  padding: 20px ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(245, 245, 245, 0.8); 
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+}
+.cardImage{
+  width: 272px;
+  height: 169px;
+  background-image: url(./assets/card.png);
+  background-size: cover;
+}
+.cardImage2{
+  width: 320px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  opacity: 0.7;
+}
+.cardInput{
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 269px;
+  gap: 10px;
+  background-color: rgba(240, 248, 255, 0.116);
+  margin: 0;
+  padding: 0;
+}
+.cardInput h3{
+  color: white;
+  margin-top: 0;
+}
+.detailSection h3{
+  color: rgba(0, 0, 0, 0.774);
+  font-size: 1.2rem;
+}
+.completeForm{
+    width: 800px;
+    height: 500px;
+    padding: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(245, 245, 245, 0.8); 
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+}
+.completeMessage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: rgba(255, 255, 255, 0.103); */
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.253),rgba(255, 255, 255, 0.24));
+  padding: 50px;
+  border-radius: 16px;
+}
+.completeMessage h2{
+  font-size: 5rem;
+  margin: 0;
+}
+.completeMessage h1{
+  font-family:  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgba(255, 255, 255, 0.705);
+}
